@@ -1,4 +1,6 @@
-# LOCAL-RPC-SETUP
+## Local RPC Node Setup – Quick Start Guide
+
+`This guide helps you set up your own local Sepolia RPC node quickly and reliably. Before starting, make sure you have a VPS that meets the minimum hardware requirements. This setup uses Docker to simplify installation and ensures your node runs smoothly with sufficient resources.`
 
  - Quick Checklist Before Starting
  - VPS with required CPU/RAM/disk ready (SSD ≥1 TB)
