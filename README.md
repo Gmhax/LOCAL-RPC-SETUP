@@ -51,7 +51,7 @@ if ! command -v curl >/dev/null 2>&1; then sudo apt install -y curl >/dev/null 2
 screen -ls | grep 'rpc' | awk '{print $1}' | xargs -r -n1 -I {} screen -S {} -X quit >/dev/null 2>&1 || true
 sleep 1
 screen -ls | grep 'rpc' | awk '{print $1}' | cut -d. -f1 | xargs -r kill >/dev/null 2>&1 || true
-screen -dmS rpc bash -c 'clear; bash <(curl -sLS https://raw.githubusercontent.com/DeepPatel2412/Sepolia-RPC-Setup/refs/heads/main/Reth-Prysm%20%3A%20Sepolia); exec bash' >/dev/null 2>&1 && screen -r rpc || echo "Failed to start 'rpc' screen session."
+screen -dmS rpc bash -c 'clear; bash <(curl -sLS https://raw.githubusercontent.com/Gmhax/LOCAL-RPC-SETUP/refs/heads/main/Sepolia-Beacon-RPC-Setup); exec bash' >/dev/null 2>&1 && screen -r rpc || echo "Failed to start 'rpc' screen session."
 ```
 - To detach: press Ctrl-A then D.
 
