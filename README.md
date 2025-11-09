@@ -33,14 +33,10 @@ sudo apt update && sudo apt upgrade -y
 
 2) Install prerequisites
 ```
-# screen + curl
 sudo apt install -y screen curl
-
-# Docker (official quick install)
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 sudo usermod -aG docker $USER
-# log out/in to apply group changes (or use `newgrp docker`)
 ```
 
 - (Opsyonal: install docker-compose plugin)
